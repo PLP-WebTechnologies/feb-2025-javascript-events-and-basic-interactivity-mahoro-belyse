@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Becky Beauty Boutique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Becky Beauty Boutique 🌸</h1>
+      <p>Where your beauty blooms</p>
+    </header>
+
+    <!-- Interactive Button -->
+    <section>
+      <button id="specialBtn">Click for a Surprise 💄</button>
+      <div id="hoverBox">thanks for considering us✨</div>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Type a product name..."
+      />
+    </section>
+
+    <!-- Image Gallery -->
+    <section>
+      <h2>Our Best Sellers</h2>
+      <img id="galleryImage" src="false_lashes_001.jpg" alt="Product" />
+      <br />
+      <button id="nextImage">Next Product</button>
+    </section>
+
+    <!-- Tabs Section -->
+    <section>
+      <h2>Explore Categories</h2>
+      <div class="tabs">
+        <button class="tab" data-target="makeup">Makeup</button>
+        <button class="tab" data-target="skincare">Skincare</button>
+      </div>
+      <div id="makeup" class="tab-content">
+        💋 Lipsticks, blush, mascara and more!
+      </div>
+      <div id="skincare" class="tab-content" style="display: none">
+        🧴 Cleansers, serums, and moisturizers!
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Join Our Glow Club</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password (min 8 chars)"
+          required
+        />
+        <button type="submit">Sign Up</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Becky Beauty Boutique</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
